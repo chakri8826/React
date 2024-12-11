@@ -4,11 +4,13 @@ import App from "./App.jsx";
 import Chak from "./Chakri.jsx"
 import React from "react";
 
+
 // function MyApp(){
 //   return (
 //     <h1>Function in main.jsx</h1>
 //   )
 // }
+
 
 //this wont work bcoz react expects props in another way
 // const reactElement = {
@@ -36,6 +38,7 @@ const reactElement =React.createElement(
   "Click me to visit Google",
   anotherUser
 );
+
 createRoot(document.getElementById("root")).render(
   // <>
     reactElement
@@ -46,8 +49,3 @@ createRoot(document.getElementById("root")).render(
     // <Chak /> 
   // </>
 ); 
-
-
-
-
-
