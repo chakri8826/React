@@ -11,7 +11,7 @@ function App() {
     <>
       <h1 className="bg-green-400 text-black p-4 rounded-xl mb-4">TailWind</h1>
       <Card username="Chakradhar" priceTxt="100" />
-      <Card username="Chakri"   />
+      <Card username="Chakri" />
       {/* <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
         <img
           class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"

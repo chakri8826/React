@@ -10,7 +10,15 @@ function App() {
   // let counter=0;
   let addVal = ()=>{
     // counter++;
-    setCounter(counter+1);
+    //WONT INCREMENT 3 TIMES
+    // setCounter(counter+1);
+    // setCounter(counter+1);
+    // setCounter(counter+1);
+
+    //
+    setCounter(prevCount=>prevCount+1)
+    setCounter(prevCount=>prevCount+1)
+    setCounter(prevCount=>prevCount+1)
     if(counter===20){
       setCounter(0)
     }
