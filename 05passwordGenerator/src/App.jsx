@@ -18,6 +18,7 @@ function App() {
     window.navigator.clipboard.writeText(password.current.value)
   },[password])
 
+
   //useCallback used for memoizing it stores values in cache memory and updates if there are any new updates
   const pswdGenerator = useCallback(() => {
     let pswd = "";
@@ -25,11 +26,12 @@ function App() {
     if (charAllowed) str += "!@#$%&'()*+,-./:;<=>?@[]^_`{|}~€";
     if (numberAllowed) str += "0123456789";
     for (let i = 1; i <= length; i++) {
-      let char = Math.floor(Math.random() * str.length + 1);
+      let char = Math.floor(Math.random() * str.length);
       pswd += str.charAt(char);
     }
     setpswd(pswd);
   }, [length, numberAllowed, charAllowed, setpswd]);
+
 
   //WHEN WE WANT A METHOD TO USE MULTIPLE TIMES WE USE useEffect HOOK
   useEffect(() => {
