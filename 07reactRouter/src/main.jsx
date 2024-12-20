@@ -51,7 +51,7 @@ const router = createBrowserRouter([
   },
 ]);
 
-
+//METHOD2
 // const router = createBrowserRouter(
 //     createRoutesFromElements(
 //     <Route path="/" element={<Layout />}>
