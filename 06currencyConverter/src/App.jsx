@@ -11,12 +11,12 @@ function App() {
 
   const currencyInfo = useCurrencyInfo(from)
   const options = Object.keys(currencyInfo)
-const swap = () => {
-  setFrom((from) => to);
-  setTo((to) => from);
-  setConvertedAmt(amount);
-  setAmount(convertedAmt);
-};
+  const swap = () => {
+    setFrom((from) => to);
+    setTo((to) => from);
+    setConvertedAmt(amount);
+    setAmount(convertedAmt);
+  };
   const convert = ()=>{
      setConvertedAmt(amount * currencyInfo[to]);
   }

@@ -20,7 +20,7 @@ function Home() {
                 <div className="flex flex-wrap">
                     <div className="p-2 w-full">
                         <h1 className="text-2xl font-bold hover:text-gray-500">
-                            Login to read posts
+                            LOGIN TO EXPLORE POSTS
                         </h1>
                     </div>
                 </div>
@@ -33,14 +33,14 @@ function Home() {
         <Container>
             <div className="flex flex-wrap">
             {posts.map((post) => (
-                <div key={post.$id} className="p-2 w-1/4">
+                <div key={post.$id} className="p-2 w-1/4"> 
                     <PostCard {...post} />
-                </div>
-            ))}
-            </div>
+                </div>  
+            ))}  
+            </div>  
         </Container>
-        </div>
+        </div>  
     );
 }
 
-export default Home;
+export default Home;    

@@ -37,4 +37,3 @@ function Card({username,priceTxt=500}){
 }
 export default Card
 
- 

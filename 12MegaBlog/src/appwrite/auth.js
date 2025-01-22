@@ -112,6 +112,7 @@ export class AuthService {
 
   async login({ email, password }) {
     try {
+      // Creates dynamically ids for every new login session.
       const session = await this.account.createEmailPasswordSession(
         email,
         password
@@ -140,6 +141,8 @@ export class AuthService {
       console.log("Appwrite service :: logout :: error", error);
     }
   }
+
+  
 }
 
 const authService = new AuthService();

@@ -20,7 +20,7 @@ export class Service {
                 return await this.databases.createDocument(
                     conf.appwriteDataBaseId,
                     conf.appwriteCollectionId,
-                    slug, //document ID (unique ga undali so slug using)
+                    ID.unique(), //document ID (unique ga undali so ID.unique using, slug use chesthey same url isthey same slug vastundi they we get error)
                     {
                         title,
                         content,
@@ -35,12 +35,12 @@ export class Service {
     }
 
 
-    async updatePost(slug,{title, content, featuredImage, status}) {
+    async updatePost(postId,{title, content, featuredImage, status}) {
         try {
             return await this.databases.updateDocument(
                 conf.appwriteDataBaseId,
                 conf.appwriteCollectionId,
-                slug,
+                postId,
                 {
                         title,
                         content,
@@ -95,9 +95,10 @@ export class Service {
             );
         } catch (error) {
             console.log("Appwrite service :: getPosts :: error", error);
-            return false;
+                return false;
         }
     }
+
 
 
 
@@ -110,13 +111,13 @@ export class Service {
                 conf.appwriteBucketId,
                 ID.unique(),
                 file
-            );
+            ); 
         } 
         catch (error) {
             console.log("Appwrite service :: uploadFile :: error", error);
             return false; 
         }
-    }
+    } 
 
     
     async deleteFile(fileid){
@@ -147,6 +148,9 @@ export class Service {
 
 const service = new Service()
 export default service
+
+
+
 
 
 

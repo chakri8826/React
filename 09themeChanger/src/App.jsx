@@ -7,7 +7,7 @@ import Card from './components/Card';
 function App() {  
   const [themeMode,setThemeMode] = useState("light")
 
-      const darkTheme = () => {
+      const darkTheme = () => { 
         setThemeMode("dark");
       };
       const lightTheme = () => {
@@ -19,7 +19,7 @@ function App() {
     document.querySelector('html').classList.remove("light",
     "dark")
     document.querySelector('html').classList.add(themeMode)
-  },[themeMode])
+  },[themeMode])  
 
   return (
     <ThemeProvider value={{ themeMode, darkTheme, lightTheme }}>

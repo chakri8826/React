@@ -19,7 +19,7 @@ function App() {
   useEffect(()=>{
     localStorage.setItem("todos",JSON.stringify(todos))
   },[todos])
-  
+
 
   const addTodo = (todo) => {
     // console.log(todo)

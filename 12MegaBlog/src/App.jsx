@@ -23,17 +23,28 @@ function App() {
       .finally(() => setLoading(false));
   }, []);
 
-  return !loading ? (
-    <div className="min-h-screen flex flex-wrap content-between bg-gray-400">
+  return loading ? (
+    <div className="min-h-screen flex items-center justify-center bg-blue-200">
+      <div className="spinner"></div> {/* Spinner Component */}
+    </div>
+  ) : (
+    <div className="min-h-screen flex flex-wrap content-between bg-blue-200">
       <div className="w-full block">
         <Header />
         <main>
-          TODO: <Outlet />
+          <Outlet />
         </main>
-        <Footer />
       </div>
+      <Footer />
     </div>
-  ) : null;
+  );
 }
 
 export default App;
+
+
+
+
+
+
+

@@ -19,8 +19,8 @@ export default function Post() {
         appwriteService.getPost(slug).then((post) => {
             if (post) setPost(post);
             else navigate("/");
-        });
-        } else navigate("/");
+        });}
+        else navigate("/");
     }, [slug, navigate]);
 
     const deletePost = () => {
@@ -63,3 +63,7 @@ export default function Post() {
         </div>
     ) : null;
 }
+
+
+
+

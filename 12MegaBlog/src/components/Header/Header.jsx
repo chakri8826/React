@@ -37,7 +37,7 @@ function Header() {
   ];
 
   return (
-    <header className="py-3 shadow bg-gray-500">
+    <header className="py-3 shadow bg-gray-900">
       <Container>
         <nav className="flex">
           <div className="mr-4">
@@ -48,10 +48,10 @@ function Header() {
           <ul className="flex ml-auto">
             {navItems.map((item) =>
               item.active ? (
-                <li key={item.name}>
+                <li key={item.name} className="text-white">
                   <button
                     onClick={() => navigate(item.slug)}
-                    className="inline-bock px-6 py-2 duration-200 hover:bg-blue-100 rounded-full"
+                    className="inline-bock px-6 py-2 blue duration-200 hover:bg-gray-800 rounded-full"
                   >
                     {item.name}
                   </button>
@@ -63,11 +63,11 @@ function Header() {
                 <LogoutBtn />
               </li>
             )}
-          </ul>
+        </ul>
         </nav>
       </Container>
     </header>
   );
 }
-
 export default Header;
+

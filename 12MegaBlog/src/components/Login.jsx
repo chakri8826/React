@@ -16,8 +16,14 @@ function Login() {
     setError("");
     try {
       const session = await authService.login(data);
+      // console.log("Session: ");
+      // console.log(session);
+      
       if (session) {
         const userData = await authService.getCurrentUser();
+        // console.log("UserData");
+        // console.log(userData);
+        
         if (userData) dispatch(authLogin(userData));
         navigate("/");
       }
@@ -29,7 +35,7 @@ function Login() {
   return (
     <div className="flex items-center justify-center w-full">
       <div
-        className={`mx-auto w-full max-w-lg bg-gray-100 rounded-xl p-10 border border-black/10`}
+        className={`mx-auto w-full max-w-lg bg-gray-200 rounded-xl p-10 border border-black/10`}
       >
         <div className="mb-2 flex justify-center">
           <span className="inline-block w-full max-w-[100px]">
@@ -62,8 +68,8 @@ function Login() {
                     /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(value) ||
                     "Email address must be a valid address",
                 },
-              })}
-            />
+              })}                                              
+            />            
             <Input
               label="Password: "
               type="password"

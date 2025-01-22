@@ -15,10 +15,10 @@ function Select({ options, label, className, ...props }, ref) {
           <option key={option} value={option}>
             {option}
           </option>
-        ))}
+        ))} 
       </select>
     </div>
   );
 }
 
-export default React.forwardRef(Select);
+export default React.forwardRef(Select); 
