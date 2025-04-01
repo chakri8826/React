@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://unpkg.com/react@17.0.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+         <div id="root"></div>
+         <!-- USING REACT  -->
+        <!-- <script type="module">
+            const elementProps  = {className: "greeting",children:"Hello World"};
+            const elementType = "h1";
+            const element = React.createElement(elementType,elementProps);
+            ReactDOM.render(element,document.getElementById("root"));
+        </script> -->
+
+         
+        <!-- IN JSX WE CAN ALSO CALL FUNCTIONS USING {} -->
+        <!-- <script type="text/babel">
+            const fullName = (user)=>user.first + " "+user.second;
+            const user = {first:"Kommu",second:"Chakri"};
+            const element = <h1>Hello, {fullName(user)}</h1>;
+            ReactDOM.render(element,document.getElementById("root"));
+        </script> -->
+
+
+
+        <!-- NESTING JSX ELEMENTS -->
+        <script type="text/babel">
+            const element = (
+                <div>
+                    <h1>Hello!</h1>
+                    <p>Good to see you here.</p>
+                </div>
+            );
+            ReactDOM.render(element,document.getElementById("root"));
+        </script>
+
+
+</body>
+</html>
