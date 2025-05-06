@@ -1,0 +1,56 @@
+/* .app-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.heading{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.countries-list{
+    list-style-type: none;
+    padding: 0;
+}
+.country-button{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+.capital-display-container{
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+.capital-display-text{
+    font-weight: bold;
+} */
+
+.bg{
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.countries{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+}
+.inp{
+    display: flex;
+}
+p{
+    margin-left: 10px;
+}

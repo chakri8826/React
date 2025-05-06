@@ -1,0 +1,20 @@
+.img-container{
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+.img{
+    width: 80%;
+    height: 500px;
+}
+
+p{
+    color:#64748b
+}
+ 
+.thumbnails-list{
+    list-style-type: none;
+    display: flex;
+}

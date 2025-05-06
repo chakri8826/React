@@ -1,0 +1,30 @@
+.thumbnails-list{
+    list-style-type: none;
+    display: flex;
+    grid-template-columns: repeat(4, 1fr); 
+    padding:0px;
+}
+.thumbnails-list li {
+  margin: 15px;
+}
+
+.butt{
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  filter: blur(2px);  
+  border-radius: 4px;
+  border: 2px solid transparent;
+}
+@media (min-width: 768px) {
+  .thumbnails-list {
+    grid-template-columns: 1fr; /* 1 per row */
+  }
+}
+
+.thumbnails-container {
+  width: 80%;  
+}
+.activeButt{
+  filter:none
+}
