@@ -125,7 +125,7 @@ class App extends Component {
               isActive={activeTabId === tabDetails.tabId} 
             /> 
           ))}
-        </ul>
+        </ul> 
 
         <ul className="project-list-container">
           {filteredProjects.map((projectDetails) => (
