@@ -1,0 +1,71 @@
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #343a40;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.form input,
+.form select {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.form button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #0b5ed7;
+}
+
+.transactions-list {
+  margin-top: 24px;
+  list-style: none;
+  padding: 0;
+}
+
+.transactions-history {
+  margin-top: 32px;
+}
+
+.transactions-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #dee2e6;
+  padding: 12px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.transactions-header p {
+  margin: 0;
+  flex: 1;
+}
+
+.header-action {
+  text-align: right;
+}

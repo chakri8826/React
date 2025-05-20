@@ -1,0 +1,28 @@
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.transaction-item p {
+  margin: 0;
+  flex: 1;
+}
+
+.transaction-item button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.transaction-item button:hover {
+  background-color: #c82333;
+}
