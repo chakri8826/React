@@ -1,0 +1,47 @@
+.score-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #9796f0;
+  padding: 40px;
+  border-radius: 10px;
+  color: white;
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.result-text {
+  flex: 1;
+}
+
+.result-text h1 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.result-text p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.result-text button {
+  background-color: yellow;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.result-image {
+  flex: 1;
+  text-align: right;
+}
+
+.result-image img {
+  width: 150px;
+  height: auto;
+}

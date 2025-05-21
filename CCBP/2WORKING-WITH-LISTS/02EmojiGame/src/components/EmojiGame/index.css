@@ -1,0 +1,16 @@
+.bg{
+    background:linear-gradient(to right,#6a59ff,#9796f0 );
+    background-size: cover;
+    height: 100vh;
+}
+.uli{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+.inner{
+    width:800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

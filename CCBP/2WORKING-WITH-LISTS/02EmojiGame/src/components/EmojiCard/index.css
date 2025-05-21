@@ -1,0 +1,29 @@
+.emoji-card {
+  width:150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #9796f0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.emoji-card:hover {
+  transform: scale(1.05);
+}
+
+.emoji-image {
+  width: 80px;
+  height: 80px;
+}
+
+.emoji-name {
+  font-size: 14px;
+  margin-top: 8px;
+  color:black
+}

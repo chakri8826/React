@@ -1,0 +1,21 @@
+.nav-main{
+    background-color: #9796f0;
+    height: 80px;
+    padding:20px;
+    display: flex;
+    justify-content: space-between;
+}
+.firstOne{
+    display: flex;
+}
+p{
+    color:#ffffff;
+    font-weight: bold;
+}
+.again{
+    display: flex;
+    justify-content: space-between;
+}
+.again p{
+    margin-right: 34px;
+}
