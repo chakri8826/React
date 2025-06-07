@@ -109,7 +109,7 @@ class LoginForm extends Component {
     const jwtToken = Cookies.get("jwt-Token");
     if(jwtToken!==undefined){
       return <Redirect to="/" />
-    }
+    } 
     return (
       <div className="login-form-container">
         <img
